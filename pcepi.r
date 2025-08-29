@@ -9,7 +9,7 @@ library(jsonlite)
 library(writexl)
 
 # Substitua 'YOUR_USER_ID' pelo seu UserID real da API do BEA
-api_key <- "F9A6B211-0C89-4C2D-A349-CADD69AAD279"
+api_key <- ""
 
 # 2. Defina a URL base da API e os parâmetros
 base_url <- "https://apps.bea.gov/api/data"
@@ -48,3 +48,4 @@ timestamp <- format(Sys.time(), "%Y%m%d")
 nome <- paste0("PCE", timestamp, ".xlsx")
 
 write_xlsx(df_wide, nome)
+
